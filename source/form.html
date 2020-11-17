@@ -9,16 +9,15 @@
       <a href="#" class="page-header__logo" aria-label="Логотип сайта Cat Energy"></a>
       <a href="#" class="page-header__title" aria-label="Сайт Cat Energy"></a>
       <nav class="main-nav">
-        <a href="" class="main-nav__toggle" aria-label="Кнопка-бургер главной навигации"></a>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -31,19 +30,19 @@
           <li class="program-form__item">
             <label>
               <span class="program-form__sign">ИМЯ:*</span>
-              <input type="text" class="program-form__field" name="cat-personality" placeholder="барсик" aria-label="Поле для ввода имени кота">
+              <input type="text" class="program-form__field" name="cat-personality" placeholder="барсик">
             </label>
           </li>
           <li class="program-form__item">
             <label>
               <span class="program-form__sign">Вес (кг):*</span>
-              <input type="text" class="program-form__field" name="cat-personality" placeholder="7" aria-label="Поле для ввода веса кота">
+              <input type="text" class="program-form__field" name="cat-personality" placeholder="7">
             </label>
           </li>
           <li class="program-form__item">
             <label>
               <span class="program-form__sign">Возраст (лет):</span>
-              <input type="text" class="program-form__checkbox" name="cat-personality" placeholder="7" aria-label="Поле для ввода возраста кота">
+              <input type="text" class="program-form__checkbox" name="cat-personality" placeholder="7">
             </label>
           </li>
         </ul>
@@ -67,53 +66,53 @@
             </label>
           </li>
         </ul>
-        <div class="user-info">
+        <div class="program-form__user-info user-info">
           <h3 class="user-info__title">Контактные данные (владельца кота)</h3>
           <label class="user-info__label">
             <span class="user-info__sign">E-mail:*</span>
-            <input type="email" class="user-info__field" placeholder="kuklachev@gmail.com" name="user-email" aria-label="Поле для ввода адреса электронной почты">
+            <input type="email" class="user-info__field" placeholder="kuklachev@gmail.com" name="user-email">
           </label>
           <label class="user-info__label">
             <span class="user-info__sign">Телефон:*</span>
-            <input type="tel" class="user-info__field" placeholder="8 (960) 900-60-90" name="user-phone" aria-label="Поле для ввода номера телефона">
+            <input type="tel" class="user-info__field" placeholder="8 (960) 900-60-90" name="user-phone">
           </label>
         </div>
         <div class="user-info">
           <h3 class="user-info__title">Комментарий</h3>
           <label>
-            <textarea class="user-info__comment" placeholder="Расскажите обо всех повАдках кота" name="user-comment" aria-label="Поле для ввода комментария"></textarea>
+            <textarea class="user-info__comment" placeholder="Расскажите обо всех повАдках кота" name="user-comment"></textarea>
           </label>
         </div>
         <div class="user-info">
           <h3 class="user-info__title">Дополнительно</h3>
           <ul class="user-info__list">
             <li class="user-info__item">
-              <label class="checkbox-item">
+              <label class="user-info__checkbox-item">
                 <input class="user-info__checkbox" type="checkbox" name="additional" value="sweetener" checked>
                 <span class="user-info__sign">сахарозаменитель</span>
               </label>
             </li>
             <li class="user-info__item">
-              <label class="checkbox-item">
+              <label class="user-info__checkbox-item">
                 <input class="user-info__checkbox" type="checkbox" name="additional" value="water">
                 <span class="user-info__sign">питьевая вода</span>
               </label>
             </li>
             <li class="user-info__item">
-              <label class="checkbox-item">
+              <label class="user-info__checkbox-item">
                 <input class="user-info__checkbox" type="checkbox" name="additional" value="milk" disabled>
                 <span class="user-info__sign">молоко</span>
               </label>
             </li>
             <li class="user-info__item">
-              <label class="checkbox-item">
+              <label class="user-info__checkbox-item">
                 <input class="user-info__checkbox" type="checkbox" name="additional" value="vitamins" checked disabled>
                 <span class="user-info__sign">витамины</span>
               </label>
             </li>
           </ul>
         </div>
-        <button type="submit" class="program-form__button" aria-label="Кнопка для отправки формы">отправить заявку</button>
+        <button type="submit" class="program-form__button">отправить заявку</button>
         <p class="program-form__footnote">* — Обязательные поля</p>
       </form>
     </main>
@@ -122,7 +121,7 @@
         <div class="contacts__title">Приглашаем к сотрудничеству дилеров!</div>
         <div class="contacts__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
       </div>
-    <section href="" class="page-footer__map" aria-label="Магазин на карте по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></section>
+    <section class="page-footer__map" aria-label="Магазин на карте по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></section>
     <a href="" class="page-footer__title" aria-label="Сайт Cat Energy"></a>
     <ul class="page-footer__socials">
       <li class="page-footer__item">
