@@ -1,0 +1,42 @@
+@import "variables.scss";
+@import "fonts.scss";
+
+.promo {
+  background: url("../img/promo-cat.jpg") no-repeat;
+}
+
+.promo__wrapper {
+  background: rgba($basic-green, 0.85);
+}
+
+.promo__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-white;
+}
+
+.promo__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.promo__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $basic-green;
+
+  &:focus {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,11 @@
+@import "variables.scss";
+@import "fonts.scss";
+
+.page-footer__developer {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  color: $color-black;
+}

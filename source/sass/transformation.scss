@@ -1,0 +1,42 @@
+@import "variables.scss";
+@import "fonts.scss";
+
+.transformation__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.transformation__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.transformation__result {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.transformation__legend {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: lowercase;
+}
+
+.transformation__spending {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
