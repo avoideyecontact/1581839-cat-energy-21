@@ -1,0 +1,14 @@
+@import "variables.scss";
+@import "fonts.scss";
+
+.bonus {
+  background: url("../img/bonus-cat.jpg") no-repeat;
+}
+
+.bonus__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-white;
+}
