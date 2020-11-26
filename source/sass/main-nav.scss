@@ -1,0 +1,21 @@
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &--down {
+    opacity: 0.3;
+  }
+
+  &--active {
+    border-bottom: 2px solid $basic-green;
+  }
+}

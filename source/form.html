@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Cat Energy</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -42,7 +43,7 @@
           <li class="program-form__item">
             <label>
               <span class="program-form__sign">Возраст (лет):</span>
-              <input type="text" class="program-form__checkbox" name="cat-personality" placeholder="7">
+              <input type="text" class="program-form__field" name="cat-personality" placeholder="7">
             </label>
           </li>
         </ul>
@@ -50,19 +51,19 @@
           <li class="program-form__item">
             <label>
               <input type="radio" class="program-form__radio" name="purpose" value="1" checked>
-              <span class="program-form__sign">похудение</span>
+              <span class="program-form__sign program-form__sign--dark">похудение</span>
             </label>
           </li>
           <li class="program-form__item">
             <label>
               <input type="radio" class="program-form__radio" name="purpose" value="2">
-              <span class="program-form__sign">Набор массы</span>
+              <span class="program-form__sign program-form__sign--dark">Набор массы</span>
             </label>
           </li>
           <li class="program-form__item">
             <label>
               <input type="radio" class="program-form__radio" name="purpose" value="3">
-              <span class="program-form__sign">Не знаю (Нужен ваш совет)</span>
+              <span class="program-form__sign program-form__sign--dark">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
         </ul>
@@ -89,25 +90,25 @@
             <li class="user-info__item">
               <label class="user-info__checkbox-item">
                 <input class="user-info__checkbox" type="checkbox" name="additional" value="sweetener" checked>
-                <span class="user-info__sign">сахарозаменитель</span>
+                <span class="user-info__sign user-info__sign--black">сахарозаменитель</span>
               </label>
             </li>
             <li class="user-info__item">
               <label class="user-info__checkbox-item">
                 <input class="user-info__checkbox" type="checkbox" name="additional" value="water">
-                <span class="user-info__sign">питьевая вода</span>
+                <span class="user-info__sign user-info__sign--black">питьевая вода</span>
               </label>
             </li>
             <li class="user-info__item">
               <label class="user-info__checkbox-item">
                 <input class="user-info__checkbox" type="checkbox" name="additional" value="milk" disabled>
-                <span class="user-info__sign">молоко</span>
+                <span class="user-info__sign user-info__sign--black">молоко</span>
               </label>
             </li>
             <li class="user-info__item">
               <label class="user-info__checkbox-item">
                 <input class="user-info__checkbox" type="checkbox" name="additional" value="vitamins" checked disabled>
-                <span class="user-info__sign">витамины</span>
+                <span class="user-info__sign user-info__sign--black">витамины</span>
               </label>
             </li>
           </ul>
