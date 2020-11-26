@@ -1,0 +1,43 @@
+@import "variables.scss";
+@import "fonts.scss";
+
+.user-info__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.user-info__list {
+  list-style: none;
+}
+
+.user-info__sign {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
+
+.user-info__sign--black {
+  color: $color-black;
+}
+
+.user-info__field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
+
+.user-info__comment::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
