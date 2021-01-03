@@ -1,12 +1,14 @@
 @import "variables.scss";
 @import "fonts.scss";
+@import "hidden.scss";
 @import "page.scss";
+@import "page__body.scss";
 @import "page-header.scss";
 @import "main-nav.scss";
 @import "page-main.scss";
 @import "promo.scss";
 @import "offers.scss";
-@import "principles.scss";
+@import "principle.scss";
 @import "transformation.scss";
 @import "cat-timelapse.scss";
 @import "page-footer.scss";
@@ -16,3 +18,4 @@
 @import "catalog.scss";
 @import "additional.scss";
 @import "bonus.scss";
+@import "center.scss";

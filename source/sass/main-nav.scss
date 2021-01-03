@@ -1,4 +1,6 @@
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -17,5 +19,55 @@
 
   &--active {
     border-bottom: 2px solid $basic-green;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav__list {
+    @include hidden;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .main-nav__toggle {
+    @include hidden;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    padding-left: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    background: rgba($basic-green, 0.85);
+
+  }
+
+  .main-nav__link {
+    color: $color-white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+
+    &--active {
+      border-bottom: 2px solid $color-white;
+    }
+  }
+
+  .main-nav__toggle {
+    @include hidden;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    padding-left: 35px;
   }
 }

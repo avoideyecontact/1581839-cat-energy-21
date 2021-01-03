@@ -6,3 +6,19 @@
   text-decoration: none;
   color: $special_dark-grey;
 }
+
+@media (max-width: $tablet-width) {
+  .page-footer__copyright {
+    padding: 22px 20px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__lower {
+    display: flex;
+  }
+}
