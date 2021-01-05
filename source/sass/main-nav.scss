@@ -22,6 +22,19 @@
   }
 }
 
+.main-nav--form {
+  background: none;
+}
+
+.main-nav__link--form {
+  color: $color-black;
+}
+
+.main-nav__link--form-active {
+  color: $color-black;
+  border-bottom: 2px solid $basic-green;
+}
+
 @media (max-width: $tablet-width) {
   .main-nav__list {
     @include hidden;

@@ -3,6 +3,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+  margin: 0;
 }
 
 .program-form__text {
@@ -11,10 +12,13 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .program-form__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .program-form__sign {
@@ -59,4 +63,229 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+}
+
+html {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: $tablet-width) {
+  .program__form--padding {
+    padding-top: 27px;
+  }
+
+  .program-form {
+    border-top: 1px solid $color-light-gray;
+  }
+
+  .program-form__title {
+    margin-top: 27px;
+    margin-bottom: 37px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .program-form__text {
+    margin-bottom: 39px;
+    padding-left: 20px;
+    padding-right: 74px;
+  }
+
+  .program-form__list {
+    margin-bottom: 10px;
+  }
+
+  .program-form__item label {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .program-form__sign {
+    padding-right: 13px;
+  }
+
+  .program-form__field {
+    margin-bottom: 14px;
+    width: 100%;
+  }
+
+  .program-form__radio {
+    margin-bottom: 13px;
+    margin-right: 15px;
+  }
+
+  .program-form__list--radio {
+    padding-top: 22px;
+    padding-bottom: 7px;
+    border-top: 1px solid $color-light-gray;
+    border-bottom: 1px solid $color-light-gray;
+  }
+
+  .program-form__submit {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  .program-form__button {
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 100%;
+  }
+
+  .program-form__footnote {
+    text-align: center;
+    margin-top: 21px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .program__form--padding {
+    padding-top: 27px;
+  }
+
+  .program-form__title {
+    margin-bottom: 54px;
+    padding-left: 69px;
+    padding-right: 69px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .program-form__text {
+    margin-bottom: 66px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+  }
+
+  .program-form__sign {
+    padding-right: 11px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .program-form__field {
+    width: 100%;
+    margin-right: 67px;
+  }
+
+  .program-form__field::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .program-form__list {
+    padding-left: 71px;
+  }
+
+  .program-form__item {
+    margin-bottom: 20px;
+  }
+
+  .program-form__item label {
+    display: flex;
+  }
+
+  .program-form__radio {
+    margin-bottom: 13px;
+    margin-right: 15px;
+  }
+
+  .program-form__list--radio {
+    margin-top: 52px;
+    margin-bottom: 75px;
+    margin-right: 71px;
+    margin-left: 67px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 28px;
+    padding-left: 7px;
+    border: 1px solid $color-lighter-gray;
+  }
+
+  .program-form__submit {
+    display: flex;
+    margin-bottom: 72px;
+  }
+
+  .program-form__button {
+    padding: 13px 45px;
+    box-sizing: border-box;
+    width: 282px;
+    font-size: 20px;
+    margin-left: 71px;
+    margin-right: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-form__title {
+    margin-bottom: 56px;
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 110px;
+  }
+
+  .program-form__text {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    padding-left: 110px;
+  }
+
+  .program-form_lists-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    padding-left: 111px;
+    margin-bottom: 69px;
+  }
+
+  .program-form__sign {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 14px;
+  }
+
+  .program-form__list--radio {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 27px;
+    margin-right: 67px;
+    border: 1px solid $color-lighter-gray;
+  }
+
+  .program-form__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .program-form__field {
+    width: 100%;
+  }
+
+  .program-form__item label {
+    display: flex;
+  }
+
+  .program-form__submit {
+    display: flex;
+    margin-bottom: 82px;
+  }
+
+  .program-form__button {
+    padding: 13px 207px;
+    font-size: 20px;
+    margin-left: 111px;
+    margin-right: 81px;
+  }
 }

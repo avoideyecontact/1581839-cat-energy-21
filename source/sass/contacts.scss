@@ -17,9 +17,9 @@
 
 @media (max-width: $tablet-width) {
   .contacts {
+    padding: 28px 19px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
   }
 
   .contacts--padding {
