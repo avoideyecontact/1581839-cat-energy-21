@@ -17,13 +17,12 @@
 
 @media (max-width: $tablet-width) {
   .contacts {
-    padding: 28px 19px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   .contacts--padding {
-    padding: 28px 19px;
+    padding: 19px 19px;
   }
 }
 
