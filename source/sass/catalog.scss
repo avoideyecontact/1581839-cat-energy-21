@@ -179,7 +179,7 @@
     min-height: 429px;
     align-items: center;
     background-color: transparent;
-    border: 2px solid #F2F2F2;
+    border: 2px solid $basic-grey;
   }
 
   .catalog__title--more {
@@ -243,11 +243,5 @@
     padding-right: 91px;
     margin-top: 15px;
     margin-bottom: 17px;
-  }
-
-  .catalog__extra {
-    display: grid;
-    grid-template-columns: 896px 245px;
-    column-gap: 80px;
   }
 }
