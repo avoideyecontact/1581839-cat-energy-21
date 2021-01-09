@@ -3,6 +3,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+  text-transform: uppercase;
   color: $special_dark-grey-3;
 }
 
@@ -12,4 +13,57 @@
   font-weight: 400;
   line-height: 20px;
   color: $special_dark-grey;
+}
+
+.contacts--index {
+  background-color: $color-white;
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contacts--padding {
+    padding: 19px 19px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 66px 72px 60px 72px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: 21px;
+    width: 171px;
+  }
+
+  .contacts__location {
+    text-align: right;
+    width: 159px;
+  }
+
+  .contacts__lower {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    background-color: $color-white;
+  }
+
+  .contacts--padding {
+    box-sizing: border-box;
+    width: 570px;
+    height: 201px;
+    display: flex;
+    gap: 87px;
+    padding: 66px 0 59px 0;
+  }
 }

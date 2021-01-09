@@ -1,3 +1,7 @@
+.page-footer {
+  background-color: $basic-grey;
+}
+
 .page-footer__developer {
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -5,4 +9,25 @@
   line-height: 18px;
   text-decoration: none;
   color: $special_dark-grey;
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .page-footer__copyright {
+    padding: 22px 20px;
+  }
+}
+
+// @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+
+// }
+
+@media (min-width: $desktop-width) {
+  .page-footer__lower {
+    display: flex;
+  }
+
+  .page-footer__socials {
+    margin: 0;
+    padding: 0;
+  }
 }

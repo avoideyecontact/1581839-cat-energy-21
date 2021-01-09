@@ -7,6 +7,8 @@
 
 .additional__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .additional__product {
@@ -23,4 +25,129 @@
   font-weight: 400;
   line-height: 14px;
   color: $special_dark-grey;
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .additional__title {
+    border-top: 1px solid $color-light-gray;
+    padding-top: 25px;
+    padding-left: 19px;
+    margin: 0;
+    margin-bottom: 36px;
+  }
+
+  .additional__item {
+    padding-top: 13px;
+    padding-bottom: 19px;
+    border-top: 1px solid $color-light-gray;
+  }
+
+  .additional__product {
+    margin: 0;
+    padding-left: 21px;
+  }
+
+  .additional__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    margin-top: 13px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .additional__title {
+    font-size: 36px;
+    line-height: 36px;
+    border: none;
+    padding: 0;
+    padding-left: 67px;
+    margin-bottom: 80px;
+  }
+
+  .additional__list {
+    margin: 0 30px;
+    border: 1px solid $additional-border;
+    border-top: none;
+    margin-bottom: 69px;
+  }
+
+  .additional__item {
+    border-top: 1px solid $additional-border;
+    width: 100%;
+    padding: 0;
+  }
+
+  .additional__top {
+    padding: 0 38px;
+    display: flex;
+    margin-bottom: 28px;
+    margin-top: 26px;
+    justify-content: space-between;
+  }
+
+  .additional__product {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .additional__info {
+    margin: 0;
+  }
+
+  .additional__sign {
+    margin-left: 49px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 81px;
+  }
+
+  .additional__list {
+    margin-left: 111px;
+    border: none;
+    border-bottom: 1px solid $additional-border;
+  }
+
+  .additional__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $additional-border;
+  }
+
+  .additional__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .additional__product {
+    margin-top: 25px;
+    margin-bottom: 27px;
+  }
+
+  .additional__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    margin-bottom: 24px;
+    width: 288px;
+  }
+
+  // .additional__sign:nth-of-type(odd) {
+  //   margin: 0;
+  // }
 }
