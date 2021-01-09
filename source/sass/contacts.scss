@@ -15,7 +15,11 @@
   color: $special_dark-grey;
 }
 
-@media (max-width: $tablet-width) {
+.contacts--index {
+  background-color: $color-white;
+}
+
+@media (max-width: $tablet-width - 1px) {
   .contacts {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,7 +30,7 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .contacts {
     display: flex;
     justify-content: space-between;
@@ -50,12 +54,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    background-color: $color-white;
+  }
+
   .contacts--padding {
     box-sizing: border-box;
     width: 570px;
     height: 201px;
     display: flex;
     gap: 87px;
-    padding: 66px 89px 59px 76px;
+    padding: 66px 0 59px 0;
   }
 }

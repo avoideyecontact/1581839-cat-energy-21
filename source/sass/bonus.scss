@@ -11,7 +11,7 @@
   margin: 0;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1px) {
   .bonus {
     margin: 0 20px;
     margin-bottom: 35px;
@@ -31,7 +31,7 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .bonus {
     background-size: 100%;
     background-position-y: 67%;
@@ -49,15 +49,19 @@
     padding: 0;
     padding-top: 71px;
     padding-bottom: 69px;
+    margin-left: auto;
+    margin-right: 124px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .bonus {
-    // margin-top: 80px;
-    // margin-bottom: 86px;
-    // margin-left: 80px;
     width: 245px;
     height: 289px;
+  }
+
+  .bonus__text {
+    text-align: center;
+    padding-top: 185px;
   }
 }

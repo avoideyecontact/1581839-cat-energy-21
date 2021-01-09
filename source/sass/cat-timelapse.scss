@@ -13,3 +13,19 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+// @media (max-width: $tablet-width - 1px) {
+
+// }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .cat-timelapse {
+    background-color: $color-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-timelapse {
+    background-color: $basic-grey;
+  }
+}

@@ -11,7 +11,7 @@
   color: $special_dark-grey;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1px) {
   .page-footer__copyright {
     padding: 22px 20px;
   }
@@ -24,5 +24,10 @@
 @media (min-width: $desktop-width) {
   .page-footer__lower {
     display: flex;
+  }
+
+  .page-footer__socials {
+    margin: 0;
+    padding: 0;
   }
 }

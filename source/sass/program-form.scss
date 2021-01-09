@@ -65,12 +65,7 @@
   line-height: 16px;
 }
 
-html {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1px) {
   .program__form--padding {
     padding-top: 27px;
   }
@@ -104,11 +99,16 @@ html {
 
   .program-form__sign {
     padding-right: 13px;
+    padding-top: 14px;
   }
 
   .program-form__field {
     margin-bottom: 14px;
     width: 100%;
+    border: 1px solid $color-lighter-gray;
+    padding-top: 13.2px;
+    padding-bottom: 13.8px;
+    padding-left: 15.1px;
   }
 
   .program-form__radio {
@@ -143,7 +143,7 @@ html {
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .program__form--padding {
     padding-top: 27px;
   }

@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1px) {
   .page-main__title {
     padding-top: 27px;
     padding-bottom: 41px;
@@ -15,16 +15,16 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .page-main__title {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 83px;
+    margin-left: 30px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-main__title {
-    padding-left: 110px;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .page-main__title {
+//   }
+// }

@@ -18,10 +18,12 @@
   color: $special_dark-grey;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1px) {
   .principle--padding {
     padding-top: 27px;
-    padding-bottom: 46px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .principle__title {
@@ -29,7 +31,7 @@
   }
 
   .principle__list {
-    padding-left: 60px;
+    padding-left: 80px;
   }
 
   .principle__item {
@@ -37,8 +39,9 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .principle--padding {
+    padding: 0 30px;
     padding-top: 15px;
     padding-bottom: 104px;
   }
@@ -66,6 +69,7 @@
 
 @media (min-width: $desktop-width) {
   .principle--padding {
+    padding: 0;
     padding-bottom: 126px;
   }
 

@@ -55,7 +55,7 @@
   color: $special_dark-grey;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1px) {
   .user-info__title {
     margin-top: 26px;
     margin-bottom: 35px;
@@ -93,6 +93,7 @@
   .user-info__comment {
     width: 100%;
     min-height: 174px;
+    border: 1px solid $color-lighter-gray;
   }
 
   .user-info__title--additional {
@@ -116,7 +117,7 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .user-info__title {
     margin-left: 69px;
     margin-bottom: 76px;

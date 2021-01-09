@@ -48,7 +48,7 @@
   margin: 0;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1px) {
   .transformation--padding {
     padding: 0 20px;
     padding-top: 27px;
@@ -65,10 +65,11 @@
 
   .transformation__spending {
     margin-top: 26px;
+    text-align: center;
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .transformation {
     background: none;
   }
@@ -121,6 +122,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .transformation {
+    background-color: $basic-grey;
+  }
+
+  .transformation--padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .transformation__wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
   .transformation__title {
     font-size: 60px;
     line-height: 60px;
