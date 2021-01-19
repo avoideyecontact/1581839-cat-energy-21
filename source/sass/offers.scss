@@ -50,6 +50,24 @@
     margin-top: 20px;
   }
 
+  .offers__item--slim {
+    position: relative;
+  }
+
+  .offers__item--slim::before {
+    position: absolute;
+    content: "";
+    background-color: tomato;
+    width: 50px;
+    height: 50px;
+    //background-image: url("../img/cat-back.svg");
+    background-size: cover;
+  }
+
+  .offers__item--mass {
+    position: relative;
+  }
+
   .offers__title--padding {
     padding-left: 91px;
   }

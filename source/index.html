@@ -10,8 +10,17 @@
     <header class="page-header page-header--centered">
       <div class="page-header__wrapper">
         <a href="#" class="page-header__logo" aria-label="Логотип сайта Cat Energy">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg">
+            <img src="img/logo-cat-mobile.svg" aria-label="Сайт Cat Energy">
+          </picture>
         </a>
         <a href="#" class="page-header__title" aria-label="Сайт Cat Energy">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-title-mobile.svg">
+            <img src="img/logo-cat-mobile.svg" aria-label="Сайт Cat Energy">
+          </picture>
         </a>
         <nav class="main-nav">
           <a href="" class="main-nav__toggle" aria-label="Кнопка-бургер главной навигации">
@@ -36,13 +45,17 @@
         <div class="promo__wrapper promo__wrapper--padding">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img src="" alt="">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
+            <img class="promo__image" src="img/index-can-mobile.png" width="280" height="270" aria-label="Баночка Cat Energy Pro Курица 500 грамм">
+          </picture>
           <a href="form.html" class="promo__link">Подобрать программу</a>
         </div>
       </div>
       <section class="offers offers--padding container">
         <ul class="offers__list">
-          <li class="offers__item offers__item--padding">
+          <li class="offers__item offers__item--padding offers__item--slim">
             <h3 class="offers__title offers__title--padding">Похудение</h3>
             <p class="offers__text offers__text--padding">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a href="" class="offers__link offers__link--padding">Каталог Slim</a>

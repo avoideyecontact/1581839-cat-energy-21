@@ -1,12 +1,12 @@
-.promo {
-  background: url("../img/promo-cat.jpg") no-repeat;
-  background-size: cover;
-}
-
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: rgba($basic-green, 0.85);
+  // background-color: rgba($basic-green, 0.85);
+  // background: linear-gradient(rgba($basic-green, 0.85) 0 320px, white 320px 0);
+  // background-size: 320px 302px;
+  // background-repeat: no-repeat;
+  // background: linear-gradient(to bottom,
+  // rgba($basic-green, 0.85) 300px, transparent 150px 100%);
 }
 
 .promo__title {
@@ -44,26 +44,46 @@
 }
 
 @media (max-width: $tablet-width - 1px) {
-  .promo__wrapper {
-    text-align: center;
-  }
+  .promo {
+    background-image: url("/img/promo-cat-mobile.jpg");
+    background-repeat: no-repeat;
 
-  .promo__wrapper--padding {
-    padding-left: 35px;
-    padding-right: 36px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/retina/promo-cat-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 
   .promo--padding {
-    padding: 27px 35px 0 36px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .promo__wrapper {
+    text-align: center;
+    background-size: 320px 302px;
+  }
+
+  .promo__wrapper--padding {
+    padding: 0 20px;
+    padding-top: 27px;
   }
 
   .promo__title {
     margin-bottom: 25px;
-    padding-top: 27px;
   }
 
   .promo__text {
     margin-bottom: 29px;
+  }
+
+  .promo__image {
+    width: 280px;
+    height: 270px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/retina/index-can-mobile@2x.png");
+    }
   }
 
   .promo__link {
@@ -90,16 +110,26 @@
 
   .promo__text {
     font-family: "Oswald", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 14px;
+    font-size: 20px;
+    line-height: 20px;
     text-transform: uppercase;
     color: $color-black;
     padding-bottom: 49px;
     margin-left: 88px;
   }
 
+  .promo__image {
+    width: 709px;
+    height: 609px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/retina/index-can-tablet@2x.png");
+    }
+  }
+
   .promo__link {
+    position: relative;
+    bottom: 580px;
     width: 244px;
     padding: 17px 0;
     text-align: center;
@@ -121,6 +151,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("/img/promo-cat-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/retina/promo-cat-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
+  }
+
+  .promo__wrapper {
+    background: none;
+    // background: linear-gradient(to right, transparent 450px, rgba($basic-green, 0.85) 720px);
+    // background-color: rgba($basic-green, 0.85);
+    // background-size: 720px auto;
+    // background-position: right;
+  }
+
   .promo__title {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
@@ -140,6 +189,15 @@
     padding-bottom: 52px;
   }
 
+  .promo__image {
+    width: 552px;
+    height: 499px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/retina/index-can-desktop@2x.png");
+    }
+  }
+
   .promo__link {
     width: 244px;
     text-align: center;
@@ -148,14 +206,6 @@
     line-height: 20px;
     padding: 14px 26px;
     margin-bottom: 185px;
-  }
-
-  .promo {
-    background-position: right;
-  }
-
-  .promo__wrapper {
-    background: linear-gradient(to right, transparent 50%, rgba($basic-green, 0.85) 50%);
   }
 
   .promo--padding {

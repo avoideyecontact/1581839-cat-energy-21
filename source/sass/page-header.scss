@@ -23,18 +23,31 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: $mobile-width-only;
+    margin: 0 auto;
+  }
+
+  .page-header__title {
+    padding-top: 13px;
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .page-header {
+    max-width: $tablet-width;
+    box-sizing: border-box;
+  }
+
   .page-header--centered {
     padding: 24px 29px 62px 30px;
+    margin: 0 auto;
   }
 
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: $tablet-width;
   }
 
   .page-header__title {
@@ -43,16 +56,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header--centered {
-    padding: 0;
-  }
-
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 53px;
     padding-bottom: 29px;
     width: 100%;
+    max-width: $desktop-width - 220px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
   .page-header__title {
