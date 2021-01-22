@@ -42,7 +42,7 @@
 
   .main-nav__toggle {
     display: block;
-    margin-top: 14px;
+    margin-top: 10px;
   }
 }
 
@@ -88,7 +88,6 @@
   }
 
   .main-nav__link--index {
-    background-color: rgb(170, 170, 170); //temporary bg
     color: $color-white;
     border-bottom: 2px solid $color-white;
   }

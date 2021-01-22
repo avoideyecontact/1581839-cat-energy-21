@@ -7,11 +7,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body class="page__body">
-    <header class="page-header page-header--centered container">
+    <header class="page-header page-header--centered">
       <div class="page-header__wrapper">
         <a href="#" class="page-header__logo" aria-label="Логотип сайта Cat Energy">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg">
+            <img src="img/logo-cat-mobile.svg" aria-label="Сайт Cat Energy">
+          </picture>
         </a>
         <a href="#" class="page-header__title" aria-label="Сайт Cat Energy">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-title-mobile.svg">
+            <img src="img/logo-cat-mobile.svg" aria-label="Сайт Cat Energy">
+          </picture>
         </a>
         <nav class="main-nav">
           <a href="" class="main-nav__toggle" aria-label="Кнопка-бургер главной навигации">

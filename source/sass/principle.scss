@@ -21,7 +21,7 @@
 @media (max-width: $tablet-width - 1px) {
   .principle--padding {
     padding-top: 27px;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -32,10 +32,59 @@
 
   .principle__list {
     padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .principle__item {
+    position: relative;
     padding-bottom: 26px;
+    max-width: 200px;
+  }
+
+  .principle__item::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    left: -80px;
+    top: -2px;
+    // background-image: url("../img/cat_back-mass.svg");
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+  }
+
+  .principle__item--healthy::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon_leaf.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .principle__item--powder::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon_tub.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .principle__item--cutlery::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon_eat.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .principle__item--clock::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon_alarm.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
 }
 

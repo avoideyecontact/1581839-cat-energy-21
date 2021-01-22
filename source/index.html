@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body class="page__body">
-    <header class="page-header page-header--centered">
+    <header class="page-header page-header--centered page-header--index">
       <div class="page-header__wrapper">
         <a href="#" class="page-header__logo" aria-label="Логотип сайта Cat Energy">
           <picture>
@@ -41,14 +41,14 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="promo promo--padding">
+      <div class="promo promo--padding container">
         <div class="promo__wrapper promo__wrapper--padding">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
-            <img class="promo__image" src="img/index-can-mobile.png" width="280" height="270" aria-label="Баночка Cat Energy Pro Курица 500 грамм">
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/retina/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/retina/index-can-tablet@2x.png 2x">
+            <img class="promo__image" src="img/index-can-mobile.png" srcset="img/retina/index-can-mobile@2x.png 2x">
           </picture>
           <a href="form.html" class="promo__link">Подобрать программу</a>
         </div>
@@ -60,7 +60,7 @@
             <p class="offers__text offers__text--padding">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a href="" class="offers__link offers__link--padding">Каталог Slim</a>
           </li>
-          <li class="offers__item offers__item--padding">
+          <li class="offers__item offers__item--padding offers__item--mass">
             <h3 class="offers__title offers__title--padding">Набор массы</h3>
             <p class="offers__text offers__text--padding">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a href="" class="offers__link offers__link--padding">Каталог Pro</a>
@@ -78,34 +78,41 @@
       </div>
       <div class="transformation transformation--padding">
         <div class="transformation__wrapper">
-        <h2 class="transformation__title">Живой пример</h2>
-        <p class="transformation__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="transformation__parameters">
-          <div class="transformation__parameters-wrapper">
-            <div class="transformation__index">
-              <p class="transformation__result">5 КГ</p>
-              <span class="transformation__legend">Снижение веса</span>
+          <h2 class="transformation__title">Живой пример</h2>
+          <p class="transformation__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="transformation__parameters">
+            <div class="transformation__parameters--wrapper">
+              <div class="transformation__index">
+                <p class="transformation__result">5 КГ</p>
+                <span class="transformation__legend">Снижение веса</span>
+              </div>
+              <div class="transformation__index">
+                <p class="transformation__result">60 ДНЕЙ</p>
+                <span class="transformation__legend">Затрачено времени</span>
+              </div>
             </div>
-            <div class="transformation__index">
-              <p class="transformation__result">60 ДНЕЙ</p>
-              <span class="transformation__legend">Затрачено времени</span>
-            </div>
+            <p class="transformation__spending">Затраты на питание: 15 000 РУБ.</p>
           </div>
-          <p class="transformation__spending">Затраты на питание: 15 000 РУБ.</p>
-      </div>
-      </div>
+        </div>
       </div>
       <div class="cat-timelapse">
         <div class="cat-timelapse__wrapper container">
-          <button class="cat-timelapse__before" aria-label="Кнопка слайдера">Было</button>
-          <button class="cat-timelapse__after" aria-label="Кнопка слайдера">Стало</button>
+          <picture>
+            <!-- <source media="(min-width: 1440px)" srcset="img/transformation/.png 1x, img/transformation/@2x.png 2x"> -->
+            <!-- <source media="(min-width: 768px)" srcset="img/transformation/.png 1x, img/transformation/@2x.png 2x"> -->
+            <img class="cat-timelapse__image" src="img/transformation/before-mobile.png" srcset="img/transformation/before-mobile@2x.png 2x">
+          </picture>
+          <div class="cat-timelapse__buttons">
+            <button class="cat-timelapse__before" aria-label="Кнопка слайдера">Было</button>
+            <button class="cat-timelapse__after" aria-label="Кнопка слайдера">Стало</button>
+          </div>
         </div>
       </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
       <div class="contacts contacts--padding contacts--index">
-        <div class="contacts__title">Приглашаем к сотрудничеству дилеров!</div>
+        <div class="contacts__title">Приглашаем<br>к сотрудничеству<br>дилеров!</div>
         <div class="contacts__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
       </div>
       <section class="page-footer__map" aria-label="Мы находимя по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></section>

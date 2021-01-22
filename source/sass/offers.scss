@@ -47,7 +47,7 @@
     padding-top: 30px;
     padding-bottom: 22px;
     margin: 0 20px;
-    margin-top: 20px;
+    margin-top: 22px;
   }
 
   .offers__item--slim {
@@ -57,33 +57,62 @@
   .offers__item--slim::before {
     position: absolute;
     content: "";
-    background-color: tomato;
     width: 50px;
-    height: 50px;
-    //background-image: url("../img/cat-back.svg");
-    background-size: cover;
+    height: 53px;
+    left: 22px;
+    top: 21px;
+    background-image: url("../img/cat_back-slim.svg");
+    background-repeat: no-repeat;
   }
 
   .offers__item--mass {
     position: relative;
+    margin-top: 20px;
+  }
+
+  .offers__item--mass::before {
+    position: absolute;
+    content: "";
+    width: 67px;
+    height: 50px;
+    left: 13px;
+    top: 24px;
+    background-image: url("../img/cat_back-mass.svg");
+    background-repeat: no-repeat;
   }
 
   .offers__title--padding {
-    padding-left: 91px;
+    padding-left: 71px;
   }
 
   .offers__text {
     border-bottom: 1px solid $color-light-gray;
   }
 
+  .offers__link {
+    position: relative;
+  }
+
+  .offers__link::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 12px;
+    left: 101px;
+    top: 21px;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='12' viewBox='0 0 32 12' fill='black' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='6' x2='18' y2='6' stroke='black' stroke-width='2' fill='black'/%3E%3Cpath d='M24 6L17.25 11.1962L17.25 0.803848L24 6Z' fill='black'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+  }
+
   .offers__text--padding {
     padding-top: 29px;
-    padding-bottom: 23px;
+    padding-bottom: 22px;
   }
 
   .offers__link--padding {
     display: block;
     padding-top: 19px;
+    margin-left: -1px;
   }
 }
 

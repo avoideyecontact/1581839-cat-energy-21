@@ -14,9 +14,35 @@
   text-transform: uppercase;
 }
 
-// @media (max-width: $tablet-width - 1px) {
+@media (max-width: $tablet-width - 1px) {
+  .cat-timelapse {
+    padding-bottom: 37px;
+    background-color: $color-gray;
+  }
 
-// }
+  .cat-timelapse__image {
+    margin-top: 10px;
+    margin-bottom: 27px;
+  }
+
+  .cat-timelapse__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 61px;
+  }
+
+  .cat-timelapse__after {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  .cat-timelapse__before {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+}
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .cat-timelapse {
