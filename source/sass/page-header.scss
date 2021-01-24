@@ -40,6 +40,14 @@
   .page-header__title {
     padding-top: 11px;
     padding-right: 9px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -50,7 +58,7 @@
   }
 
   .page-header--centered {
-    padding: 24px 29px 62px 30px;
+    padding: 24px 29px 60px 30px;
     margin: 0 auto;
   }
 

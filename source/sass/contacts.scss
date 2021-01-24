@@ -22,11 +22,13 @@
 @media (max-width: $tablet-width - 1px) {
   .contacts {
     display: grid;
-    grid-template-columns: 140px 140px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 
   .contacts--padding {
     padding: 28px 19px;
+    padding-bottom: 26px;
   }
 }
 

@@ -31,6 +31,10 @@
   color: $color-white;
   background-color: $basic-green;
 
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
   &:focus {
     opacity: 0.3;
   }
@@ -47,7 +51,7 @@
       background-image: url("/img/retina/promo-cat-mobile@2x.jpg");
       background-size: 320px auto;
     }
-    z-index: -2;
+    z-index: 1;
   }
 
   .promo::after {
@@ -105,6 +109,10 @@
     padding-right: 30px;
   }
 
+  .promo__wrapper {
+    position: relative;
+  }
+
   .promo__title {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
@@ -113,7 +121,7 @@
     color: $color-black;
     width: 414px;
     padding-bottom: 41px;
-    margin-left: 87px;
+    margin-left: 88px;
   }
 
   .promo__text {
@@ -122,8 +130,8 @@
     line-height: 20px;
     text-transform: uppercase;
     color: $color-black;
-    padding-bottom: 49px;
-    margin-left: 88px;
+    padding-bottom: 20px;
+    margin-left: 89px;
   }
 
   .promo__image {
@@ -136,8 +144,9 @@
   }
 
   .promo__link {
-    position: relative;
-    bottom: 580px;
+    position: absolute;
+    bottom: 530px;
+    left: 1px;
     width: 244px;
     padding: 17px 0;
     text-align: center;

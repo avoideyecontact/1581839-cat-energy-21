@@ -104,6 +104,11 @@
     background-repeat: no-repeat;
   }
 
+  .offers__link:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='12' fill='black' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000' stroke-width='2' d='M0 6h26'/%3E%3Cpath d='M32 6l-7 5V1l7 5z' fill='%23000'/%3E%3C/svg%3E");
+    width: 32px;
+  }
+
   .offers__text--padding {
     padding-top: 29px;
     padding-bottom: 22px;
@@ -117,6 +122,10 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .offers {
+    margin-top: -5px;
+  }
+
   .offers__list {
     margin: 0 30px;
   }
@@ -130,7 +139,8 @@
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
+    padding-left: 1px;
   }
 
   .offers__text {
@@ -138,6 +148,67 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-black;
+    max-width: 375px;
+  }
+
+  .offers__item--slim {
+    position: relative;
+  }
+
+  .offers__item--slim::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 212px;
+    right: 62px;
+    top: 81px;
+    background-image: url("../img/cat_back-slim.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .offers__item--mass {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .offers__item--mass::before {
+    position: absolute;
+    content: "";
+    width: 268px;
+    height: 200px;
+    right: 28px;
+    top: 91px;
+    background-image: url("../img/cat_back-mass.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .offers__link {
+    position: relative;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .offers__link::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 12px;
+    right: -49px;
+    top: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='12' viewBox='0 0 32 12' fill='black' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='6' x2='18' y2='6' stroke='black' stroke-width='2' fill='black'/%3E%3Cpath d='M24 6L17.25 11.1962L17.25 0.803848L24 6Z' fill='black'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+  }
+
+  .offers__link:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='12' fill='black' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000' stroke-width='2' d='M0 6h26'/%3E%3Cpath d='M32 6l-7 5V1l7 5z' fill='%23000'/%3E%3C/svg%3E");
+    width: 32px;
+    right: -57px;
+  }
+
+  .offers__item--mass .offers__text {
+    max-width: 342px;
   }
 }
 
