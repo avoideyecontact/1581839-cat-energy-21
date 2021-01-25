@@ -57,7 +57,10 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    position: absolute;
     background-color: $color-white;
+    top: 95px;
+    left: 110px;
   }
 
   .contacts--padding {

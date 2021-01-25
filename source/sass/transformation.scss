@@ -174,7 +174,8 @@
 
 @media (min-width: $desktop-width) {
   .transformation {
-    background-color: $basic-grey;
+    background: none;
+    // background: linear-gradient($color-background 0 135px, $basic-grey 135px 100%);
   }
 
   .transformation--padding {
@@ -205,7 +206,7 @@
   .transformation__parameters--wrapper {
     display: flex;
     gap: 42px;
-    padding-bottom: 60px;
+    padding-bottom: 49px;
   }
 
   .transformation__result {
@@ -214,14 +215,39 @@
     text-align: center;
   }
 
+  .transformation__index {
+    border: 1px solid $additional-border;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-top: 14px;
+    padding-bottom: 56px;
+    width: 162px;
+    height: 56px;
+  }
+
   .transformation__legend {
     font-size: 14px;
     line-height: 14px;
-    text-align: center;
+    margin-top: 11px;
+    display: block;
+    width: 140px;
+    background-color: $basic-grey;
   }
 
   .transformation__spending {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
     font-size: 20px;
     line-height: 20px;
+    margin-top: 11px;
+  }
+
+  .transformation__footnone {
+    display: block;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 10px;
   }
 }
