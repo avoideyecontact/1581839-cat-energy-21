@@ -1,0 +1,17 @@
+// @media (max-width: $tablet-width - 1px) {
+
+// }
+
+// @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+
+// }
+
+@media (min-width: $desktop-width) {
+  .live-example {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient($color-background 0 135px, $basic-grey 135px 100%);
+    padding: 0 110px;
+    padding-bottom: 64px;
+  }
+}

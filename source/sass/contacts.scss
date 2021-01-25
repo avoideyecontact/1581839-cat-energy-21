@@ -23,10 +23,12 @@
   .contacts {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 
   .contacts--padding {
-    padding: 19px 19px;
+    padding: 28px 19px;
+    padding-bottom: 26px;
   }
 }
 
@@ -34,12 +36,12 @@
   .contacts {
     display: flex;
     justify-content: space-between;
-    padding: 66px 72px 60px 72px;
+    padding: 66px 72px 63px 72px;
   }
 
   .contacts__title {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
     width: 171px;
   }
 
@@ -55,7 +57,10 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    position: absolute;
     background-color: $color-white;
+    top: 95px;
+    left: 110px;
   }
 
   .contacts--padding {

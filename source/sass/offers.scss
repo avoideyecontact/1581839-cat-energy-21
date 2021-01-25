@@ -47,29 +47,85 @@
     padding-top: 30px;
     padding-bottom: 22px;
     margin: 0 20px;
+    margin-top: 22px;
+  }
+
+  .offers__item--slim {
+    position: relative;
+  }
+
+  .offers__item--slim::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 53px;
+    left: 22px;
+    top: 21px;
+    background-image: url("../img/cat_back-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  .offers__item--mass {
+    position: relative;
     margin-top: 20px;
   }
 
+  .offers__item--mass::before {
+    position: absolute;
+    content: "";
+    width: 67px;
+    height: 50px;
+    left: 13px;
+    top: 24px;
+    background-image: url("../img/cat_back-mass.svg");
+    background-repeat: no-repeat;
+  }
+
   .offers__title--padding {
-    padding-left: 91px;
+    padding-left: 71px;
   }
 
   .offers__text {
     border-bottom: 1px solid $color-light-gray;
   }
 
+  .offers__link {
+    position: relative;
+  }
+
+  .offers__link::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 12px;
+    left: 101px;
+    top: 21px;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='12' viewBox='0 0 32 12' fill='black' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='6' x2='18' y2='6' stroke='black' stroke-width='2' fill='black'/%3E%3Cpath d='M24 6L17.25 11.1962L17.25 0.803848L24 6Z' fill='black'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+  }
+
+  .offers__link:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='12' fill='black' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000' stroke-width='2' d='M0 6h26'/%3E%3Cpath d='M32 6l-7 5V1l7 5z' fill='%23000'/%3E%3C/svg%3E");
+    width: 32px;
+  }
+
   .offers__text--padding {
     padding-top: 29px;
-    padding-bottom: 23px;
+    padding-bottom: 22px;
   }
 
   .offers__link--padding {
     display: block;
     padding-top: 19px;
+    margin-left: -1px;
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .offers {
+    margin-top: -5px;
+  }
+
   .offers__list {
     margin: 0 30px;
   }
@@ -83,7 +139,8 @@
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
+    padding-left: 1px;
   }
 
   .offers__text {
@@ -91,6 +148,67 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-black;
+    max-width: 375px;
+  }
+
+  .offers__item--slim {
+    position: relative;
+  }
+
+  .offers__item--slim::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 212px;
+    right: 62px;
+    top: 81px;
+    background-image: url("../img/cat_back-slim.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .offers__item--mass {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .offers__item--mass::before {
+    position: absolute;
+    content: "";
+    width: 268px;
+    height: 200px;
+    right: 28px;
+    top: 91px;
+    background-image: url("../img/cat_back-mass.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .offers__link {
+    position: relative;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .offers__link::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 12px;
+    right: -49px;
+    top: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='12' viewBox='0 0 32 12' fill='black' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='6' x2='18' y2='6' stroke='black' stroke-width='2' fill='black'/%3E%3Cpath d='M24 6L17.25 11.1962L17.25 0.803848L24 6Z' fill='black'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+  }
+
+  .offers__link:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='12' fill='black' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000' stroke-width='2' d='M0 6h26'/%3E%3Cpath d='M32 6l-7 5V1l7 5z' fill='%23000'/%3E%3C/svg%3E");
+    width: 32px;
+    right: -57px;
+  }
+
+  .offers__item--mass .offers__text {
+    max-width: 342px;
   }
 }
 
@@ -106,7 +224,8 @@
   }
 
   .offers__item {
-    padding: 77px 61px 57px 52px;
+    position: relative;
+    padding: 77px 61px 115px 52px;
     width: 570px;
   }
 
@@ -115,13 +234,53 @@
     font-size: 36px;
     line-height: 36px;
     padding-left: 162px;
-    padding-bottom: 24px;
+    padding-bottom: 75px;
+  }
+
+  .offers__link {
+    position: absolute;
+    left: 52px;
+    bottom: 58px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .offers__text {
-    padding-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
     color: $color-black;
+  }
+
+  .offers__item--slim {
+    position: relative;
+  }
+
+  .offers__item--slim::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 106px;
+    right: 62px;
+    top: 41px;
+    left: 53px;
+    background-image: url("../img/cat_back-slim.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .offers__item--mass {
+    position: relative;
+  }
+
+  .offers__item--mass::before {
+    position: absolute;
+    content: "";
+    width: 134px;
+    height: 100px;
+    top: 46px;
+    left: 33px;
+    background-image: url("../img/cat_back-mass.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
