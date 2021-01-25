@@ -36,13 +36,15 @@
   .contacts {
     display: flex;
     justify-content: space-between;
-    padding: 66px 72px 60px 72px;
+    padding: 66px 72px 63px 72px;
   }
 
   .contacts__title {
     font-size: 20px;
     line-height: 21px;
     width: 171px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .contacts__location {
