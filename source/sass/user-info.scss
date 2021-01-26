@@ -164,24 +164,41 @@
   .user-info__labels {
     display: flex;
     flex-direction: column;
-    padding-left: 68px;
+    padding-left: 52px;
     padding-right: 65px;
   }
 
   .user-info__label {
     margin-bottom: 20px;
+    padding-bottom: 0;
     display: flex;
   }
 
   .user-info__sign {
-    padding-right: 14px;
     font-size: 20px;
     line-height: 30px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-right: 20px;
   }
 
   .user-info__field {
     width: 100%;
-    margin-bottom: 65px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: 1px solid $additional-border;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .user-info__label--padding .user-info__sign {
+    padding-left: 15px;
+    padding-right: 17px;
+  }
+
+  .user-info__label--padding .user-info__field {
+    padding-left: 19px;
   }
 
   .user-info__title--comment {
