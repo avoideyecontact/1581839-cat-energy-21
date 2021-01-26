@@ -98,7 +98,7 @@
   .page-header--index::after {
     position: absolute;
     content: "";
-    background: linear-gradient(rgba($basic-green, 0.85) 0, rgba($basic-green, 0.85) 100%), url("/img/promo-cat-desktop.jpg");
+    background: linear-gradient(rgba($basic-green, 0.85) 0, rgba($basic-green, 0.85) 100%), url("../img/promo-cat-desktop.jpg");
     width: 700px;
     height: 694px;
     left: 50%;
@@ -107,7 +107,7 @@
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background: linear-gradient(rgba($basic-green, 0.85) 0, rgba($basic-green, 0.85) 100%), url("/img/retina/promo-cat-desktop@2x.jpg");
+      background: linear-gradient(rgba($basic-green, 0.85) 0, rgba($basic-green, 0.85) 100%), url("../img/retina/promo-cat-desktop@2x.jpg");
       background-size: 700px 694px;
     }
   }

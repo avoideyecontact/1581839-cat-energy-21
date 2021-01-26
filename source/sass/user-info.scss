@@ -58,28 +58,36 @@
 @media (max-width: $tablet-width - 1px) {
   .user-info__title {
     margin-top: 26px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     padding-left: 19px;
+    width: 187px;
   }
 
   .user-info__label {
     display: flex;
+    align-items: center;
     padding-left: 19px;
     padding-right: 20px;
+    margin-bottom: 11px;
   }
 
   .user-info__sign {
     padding-right: 10px;
+    margin-bottom: 3px;
   }
 
   .user-info__field {
     width: 100%;
-    margin-bottom: 14px;
+    padding-top: 13.45px;
+    padding-bottom: 11.45px;
+    padding-left: 16px;
+    margin-top: 4px;
+    border: 1px solid $additional-border;
   }
 
   .user-info__title--comment {
-    margin-top: 5px;
-    margin-bottom: 37px;
+    margin-top: 23px;
+    margin-bottom: 38px;
   }
 
   .user-info__label--comment {
@@ -87,27 +95,55 @@
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 23px;
   }
 
   .user-info__comment {
+    box-sizing: border-box;
     width: 100%;
-    min-height: 174px;
+    min-height: 150px;
     border: 1px solid $color-lighter-gray;
+    padding-top: 8px;
+    padding-left: 14px;
+    resize: none;
   }
 
   .user-info__title--additional {
-    margin-top: 22px;
-    margin-bottom: 34px;
+    margin-top: 19px;
+    margin-bottom: 39px;
   }
 
   .user-info__item {
-    padding-bottom: 25px;
+    padding-bottom: 23px;
+  }
+
+  .user-info__checkbox-item {
+    position: relative;
   }
 
   .user-info__checkbox {
+    position: relative;
     margin: 0;
-    margin-right: 16px;
+    margin-right: 40px;
+    appearance: none;
+  }
+
+  .user-info__checkbox::before {
+    position: absolute;
+    content: "";
+    top: -21px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid $additional-border;
+    background-position: 50% 50%;
+  }
+
+  .user-info__checkbox:checked::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18l-6-7-1 1 7 8L22 7l-1-1-10 12z' fill='%2368B738'/%3E%3C/svg%3E");
+  }
+
+  .user-info__checkbox:disabled::before {
+    opacity: 0.5;
   }
 
   .user-info__list {

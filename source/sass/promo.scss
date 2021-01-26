@@ -43,12 +43,12 @@
 @media (max-width: $tablet-width - 1px) {
   .promo {
     position: relative;
-    background-image: url("/img/promo-cat-mobile.jpg");
+    background-image: url("../img/promo-cat-mobile.jpg");
     background-repeat: no-repeat;
     background-position-x: 50%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/retina/promo-cat-mobile@2x.jpg");
+      background-image: url("../img/retina/promo-cat-mobile@2x.jpg");
       background-size: 320px auto;
     }
     z-index: 1;
@@ -199,7 +199,6 @@
   }
 
   .promo__link {
-    // text-align: center;
     display: block;
     width: 244px;
     box-sizing: border-box;

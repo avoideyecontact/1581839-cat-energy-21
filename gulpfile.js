@@ -27,7 +27,7 @@ const styles = () => {
     ]))
     .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("dist/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -38,7 +38,7 @@ exports.styles = styles;
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest("dist"))
+    .pipe(gulp.dest("build"))
 }
 
 // Script
@@ -47,7 +47,7 @@ const script = () => {
   return gulp.src("source/js/script.js")
     .pipe(uglify())
     .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("dist/js"))
+    .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
 
@@ -62,7 +62,7 @@ const images = () => {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("dist/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.images = images;
@@ -72,7 +72,7 @@ exports.images = images;
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("dist/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.createWebp = createWebp;
@@ -83,7 +83,7 @@ const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("dist/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.sprite = sprite;
@@ -99,7 +99,7 @@ const copy = () => {
     {
       base: "source"
     })
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest("build"));
 }
 
 exports.copy = copy;
@@ -107,7 +107,14 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  return del("dist");
+  return del("build");
+}
+
+// Reload
+
+const reload = done => {
+  sync.reload();
+  done();
 }
 
 // Server
@@ -115,7 +122,7 @@ const clean = () => {
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'dist'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -130,8 +137,8 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/js/script.js", gulp.series(script));
-  gulp.watch("source/*.html", gulp.series(html, sync.reload));
+
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 // Build
@@ -150,6 +157,8 @@ const build = gulp.series(
 
 exports.build = build;
 
+const start = build;
+exports.start = build;
 
 
 exports.default = gulp.series(
