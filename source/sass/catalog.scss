@@ -66,10 +66,24 @@
     display: flex;
     flex-direction: column;
     border-top: 1px solid $color-light-gray;
-    padding-top: 19px;
+    padding-top: 18px;
     padding-bottom: 25px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .catalog__item--more {
+    position: relative;
+  }
+
+  .catalog__item--more::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    top: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23D3D3D3' stroke-width='2' d='M15 0v30M30 15H0'/%3E%3C/svg%3E");
   }
 
   .catalog__product {
@@ -88,15 +102,30 @@
     justify-content: space-between;
   }
 
+  .catalog__link {
+    display: flex;
+    align-items: center;
+  }
+
+  .catalog__link--small {
+    margin-top: 16px;
+  }
+
+  .catalog__link--big {
+    margin-top: 7px;
+  }
+
   .catalog__order {
     text-align: center;
     padding: 10px 0;
+    margin-top: 5px;
   }
 
   .catalog__title--more {
     width: 100%;
     text-align: center;
     margin: 0;
+    margin-top: 59px;
     margin-bottom: 8px;
   }
 
@@ -113,7 +142,7 @@
 
   .catalog__order--additional {
     display: block;
-    margin: 0 20px;
+    margin: 0;
   }
 }
 
@@ -122,7 +151,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 59px;
+    row-gap: 140px;
     padding: 0 30px;
     margin-bottom: 68px;
   }
@@ -130,17 +159,25 @@
   .catalog__item {
     padding: 0;
     display: flex;
+    height: 330px;
     flex-direction: column;
+    justify-content: flex-end;
     background-color: $basic-grey;
     border: none;
     padding-left: 38px;
     padding-right: 39px;
+    padding-top: 60px;
     padding-bottom: 40px;
   }
 
   .catalog__product {
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+
+  .catalog__link {
+    position: relative;
   }
 
   .catalog__info {
@@ -152,9 +189,14 @@
   .catalog__title {
     width: 140px;
     text-align: center;
-    margin-top: 34px;
+    margin-bottom: 23px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .catalog__image {
+    position: relative;
+    top: -45px;
   }
 
   .catalog__table {

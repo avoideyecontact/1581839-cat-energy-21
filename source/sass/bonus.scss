@@ -14,14 +14,16 @@
 @media (max-width: $tablet-width - 1px) {
   .bonus {
     margin: 0 20px;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
 
   .bonus__wrapper {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     width: 100%;
     min-height: 289px;
+    background: url("../img/icon_gift.svg") no-repeat 50% 58px;
   }
 
   .bonus__text {
