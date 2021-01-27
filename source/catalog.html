@@ -24,7 +24,8 @@
         </a>
         <nav class="main-nav">
           <a href="" class="main-nav__toggle" aria-label="Кнопка-бургер главной навигации">
-            <svg width="24" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="1.5" d="M0 1h24M0 9h24M0 17h24"/></svg>
+            <svg class="main-nav__burger" width="24" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="1.5" d="M0 1h24M0 9h24M0 17h24"/></svg>
+            <svg class="main-nav__cross" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="scale(.97098 1.0282) rotate(-45 25 7)" stroke="#000" stroke-width="1.5" d="M0-1h25"/><path transform="scale(.97098 1.0282) rotate(45 -2 2)" stroke="#000" stroke-width="1.5" d="M0-1h25"/></svg>
           </a>
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -41,8 +42,8 @@
       </div>
     </header>
     <main class="page-main">
-      <h2 class="page-main__title container__catalog">Каталог продукции</h2>
-      <ul class="catalog catalog--grid container__catalog">
+      <h2 class="page-main__title container">Каталог продукции</h2>
+      <ul class="catalog catalog--grid container">
 
         <li class="catalog__item">
           <div class="catalog__product">
@@ -260,14 +261,14 @@
           <a href="" class="catalog__show">показать все</a>
         </li>
       </ul>
-      <div class="extra">
-        <div class="green-title green-title--extra">
-          <div class="green-title__wrapper container">
-            <h2 class="green-title__title">Дополнительные товары</h2>
-          </div>
+      <div class="green-title green-title--extra">
+        <div class="green-title__wrapper">
+          <h2 class="green-title__title">Дополнительные товары</h2>
         </div>
+      </div>
+      <div class="extra container">
         <div class="extra__additional additional">
-          <ul class="additional__list container__catalog">
+          <ul class="additional__list">
             <li class="additional__item">
               <div class="additional__top">
                 <h3 class="additional__product">Сахарозаменитель</h3>
@@ -292,7 +293,7 @@
               <div class="additional__top">
                 <h3 class="additional__product">молоко</h3>
                 <div class="additional__info">
-                  <span class="additional__sign">1 литров</span>
+                  <span class="additional__sign">1 литр</span>
                   <span class="additional__sign">100 Р.</span>
                 </div>
               </div>

@@ -24,11 +24,12 @@
         </a>
         <nav class="main-nav">
           <a href="" class="main-nav__toggle" aria-label="Кнопка-бургер главной навигации">
-            <svg width="24" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="1.5" d="M0 1h24M0 9h24M0 17h24"/></svg>
+            <svg class="main-nav__burger" width="24" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="1.5" d="M0 1h24M0 9h24M0 17h24"/></svg>
+            <svg class="main-nav__cross" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="scale(.97098 1.0282) rotate(-45 25 7)" stroke="#000" stroke-width="1.5" d="M0-1h25"/><path transform="scale(.97098 1.0282) rotate(45 -2 2)" stroke="#000" stroke-width="1.5" d="M0-1h25"/></svg>
           </a>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--index main-nav__link--active">Главная</a>
+              <a class="main-nav__link main-nav__link--index main-nav__link--index-active">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--index" href="catalog.html">Каталог продукции</a>
@@ -102,12 +103,15 @@
         <div class="cat-timelapse">
           <div class="cat-timelapse__wrapper container">
             <picture>
-              <!-- <source media="(min-width: 1440px)" srcset="img/transformation/.png 1x, img/transformation/@2x.png 2x"> -->
-              <!-- <source media="(min-width: 768px)" srcset="img/transformation/.png 1x, img/transformation/@2x.png 2x"> -->
+              <source media="(min-width: 1440px)" srcset="img/transformation/image_cat_desktop.png 1x, img/transformation/image_cat_desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/transformation/image_cat_tablet.png 1x, img/transformation/image_cat_tablet@2x.png 2x">
               <img class="cat-timelapse__image" src="img/transformation/before-mobile.png" srcset="img/transformation/before-mobile@2x.png 2x" alt="Как выглядел кот до">
             </picture>
             <div class="cat-timelapse__buttons">
               <button type="button" class="cat-timelapse__before" aria-label="Кнопка слайдера">Было</button>
+              <div class="cat-timelapse__toddler">
+                <button type="button" class="cat-timelapse__green"></button>
+              </div>
               <button type="button" class="cat-timelapse__after" aria-label="Кнопка слайдера">Стало</button>
             </div>
           </div>

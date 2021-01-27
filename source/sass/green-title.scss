@@ -88,6 +88,16 @@
     margin-bottom: 61px;
   }
 
+  .green-title--extra {
+    margin-bottom: 80px;
+  }
+
+  .green-title--extra .green-title__title {
+    padding-left: 37px;
+    padding-right: 36px;
+    margin-left: 70px;
+  }
+
   .green-title::before {
     content: "";
     position: absolute;
@@ -139,5 +149,15 @@
     padding-left: 40px;
     padding-right: 40px;
     background-color: $color-background;
+  }
+
+  .green-title--extra {
+    margin-bottom: 79px;
+  }
+
+  .green-title--extra .green-title__title {
+    padding-left: 37px;
+    padding-right: 36px;
+    margin-left: 113px;
   }
 }

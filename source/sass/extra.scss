@@ -1,0 +1,8 @@
+@media (min-width: $desktop-width) {
+  .extra {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+}

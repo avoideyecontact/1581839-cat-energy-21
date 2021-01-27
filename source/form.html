@@ -24,14 +24,15 @@
         </a>
         <nav class="main-nav main-nav--form">
           <a href="" class="main-nav__toggle" aria-label="Кнопка-бургер главной навигации">
-            <svg width="24" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="1.5" d="M0 1h24M0 9h24M0 17h24"/></svg>
+            <svg class="main-nav__burger" width="24" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="1.5" d="M0 1h24M0 9h24M0 17h24"/></svg>
+            <svg class="main-nav__cross" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="scale(.97098 1.0282) rotate(-45 25 7)" stroke="#000" stroke-width="1.5" d="M0-1h25"/><path transform="scale(.97098 1.0282) rotate(45 -2 2)" stroke="#000" stroke-width="1.5" d="M0-1h25"/></svg>
           </a>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html" class="main-nav__link main-nav__link--form">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--form" href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link main-nav__link--active" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--form-active">Подбор программы</a>
@@ -42,9 +43,9 @@
     </header>
     <main class="page-main">
       <form action="https://echo.htmlacademy.ru/" class="program-form program-form--padding">
-        <h2 class="program-form__title container">Подбор программы</h2>
-        <p class="program-form__text container">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
-        <div class="program-form__lists-wrapper container">
+        <h2 class="program-form__title container__form">Подбор программы</h2>
+        <p class="program-form__text container__form">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+        <div class="program-form__lists-wrapper container__form">
           <ul class="program-form__list">
             <li class="program-form__item">
               <label>
@@ -87,11 +88,11 @@
           </ul>
         </div>
         <div class="green-title green-title--info">
-          <div class="green-title__wrapper container">
+          <div class="green-title__wrapper container__form">
             <h3 class="green-title__title">Контактные данные (владельца кота)</h3>
           </div>
         </div>
-        <div class="program-form__user-info user-info container">
+        <div class="program-form__user-info user-info container__form">
           <div class="user-info__labels">
             <label class="user-info__label">
               <span class="user-info__sign">E-mail:*</span>
@@ -104,21 +105,21 @@
           </div>
         </div>
         <div class="green-title green-title--comment">
-          <div class="green-title__wrapper container">
+          <div class="green-title__wrapper container__form">
             <h3 class="green-title__title">Комментарий</h3>
           </div>
         </div>
-        <div class="program-form__user-info user-info container">
+        <div class="program-form__user-info user-info container__form">
           <label class="user-info__label--comment">
             <textarea class="user-info__comment" placeholder="Расскажите обо всех повАдках кота" name="user-comment"></textarea>
           </label>
         </div>
         <div class="green-title green-title--additional">
-          <div class="green-title__wrapper container">
+          <div class="green-title__wrapper container__form">
             <h3 class="green-title__title">Дополнительно</h3>
           </div>
         </div>
-        <div class="program-form__user-info user-info container">
+        <div class="program-form__user-info user-info container__form">
           <ul class="user-info__list">
             <li class="user-info__item">
               <label class="user-info__checkbox-item">
@@ -146,7 +147,7 @@
             </li>
           </ul>
         </div>
-        <div class="program-form__submit container">
+        <div class="program-form__submit container__form">
           <button type="submit" class="program-form__button">отправить заявку</button>
           <p class="program-form__footnote">* — Обязательные поля</p>
         </div>
