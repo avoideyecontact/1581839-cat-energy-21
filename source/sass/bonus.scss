@@ -1,5 +1,9 @@
 .bonus {
   background: url("../img/bonus-cat.jpg") no-repeat 50% 50%;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/bonus-cat@2x.jpg") no-repeat 50% 50%;
+  }
 }
 
 .bonus__text {
@@ -37,7 +41,7 @@
   .bonus {
     background-size: 100%;
     background-position-y: 67%;
-    margin: 0 30px;
+    margin: 0;
     margin-bottom: 76px;
   }
 
@@ -60,11 +64,22 @@
 
 @media (min-width: $desktop-width) {
   .bonus {
+    position: relative;
+    left: -4px;
     width: 245px;
     height: 289px;
   }
 
+  .bonus__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url("../img/icon_gift.svg") no-repeat 50% 57px;
+  }
+
   .bonus__text {
+    position: relative;
+    left: -1px;
     text-align: center;
     padding-top: 185px;
   }

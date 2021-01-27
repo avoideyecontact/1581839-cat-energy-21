@@ -66,7 +66,7 @@
     display: flex;
     flex-direction: column;
     border-top: 1px solid $color-light-gray;
-    padding-top: 18px;
+    padding-top: 0;
     padding-bottom: 25px;
     padding-left: 20px;
     padding-right: 20px;
@@ -98,6 +98,8 @@
   }
 
   .catalog__row {
+    position: relative;
+    top: -4px;
     display: flex;
     justify-content: space-between;
   }
@@ -118,7 +120,7 @@
   .catalog__order {
     text-align: center;
     padding: 10px 0;
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   .catalog__title--more {
@@ -224,16 +226,23 @@
   }
 
   .catalog__item--more {
+    position: relative;
     box-sizing: border-box;
     min-height: 429px;
     align-items: center;
     background-color: transparent;
     border: 2px solid $basic-grey;
+    margin-bottom: 23px;
   }
 
-  .catalog__title--more {
-    margin-top: 161px;
-    margin-bottom: 23px;
+  .catalog__item--more::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    top: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='31' x2='31' y2='60' stroke='%23D3D3D3' stroke-width='2'/%3E%3Cline x1='60' y1='31' y2='31' stroke='%23D3D3D3' stroke-width='2'/%3E%3C/svg%3E%0A");
   }
 
   .catalog__text {
@@ -284,17 +293,21 @@
     height: 330px;
     justify-content: flex-end;
     padding-left: 38px;
-    padding-right: 39px;
+    padding-right: 38px;
     padding-top: 60px;
   }
 
   .catalog__row {
+    position: relative;
+    left: -1px;
+    top: -3px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
-    margin-bottom: 7px;
+    padding-bottom: 7px;
+    // margin-bottom: 1px;
     border-bottom: 1px solid $color-light-gray;
+    margin-bottom: 10px;
   }
 
   .catalog__column {
@@ -304,16 +317,15 @@
 
   .catalog__title {
     position: relative;
-    top: 5px;
-    left: 1px;
+    top: -4px;
+    left: 10px;
     display: block;
     width: 150px;
     text-align: center;
-    margin-bottom: 3px;
-    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-top: 19px;
     font-size: 20px;
     line-height: 24px;
-    margin-left: 10px;
   }
 
   .catalog__image {
@@ -331,6 +343,9 @@
   .catalog__title--more {
     margin-top: 160px;
     margin-bottom: 23px;
+    position: relative;
+    top: 5px;
+    margin-right: 20px;
   }
 
   .catalog__text {
@@ -339,27 +354,40 @@
     line-height: 18px;
     margin: 0;
     margin-bottom: 87px;
+    position: relative;
+    top: 3px;
   }
 
   .catalog__show {
     text-align: center;
     background-color: $basic_grey;
+    width: 169px;
+    box-sizing: border-box;
     padding: 10px 39px;
   }
 
   .catalog__order--additional {
-    padding-left: 91px;
-    padding-right: 91px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 38px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 16px;
   }
 
   .catalog__item--more {
+    position: relative;
     box-sizing: border-box;
     min-height: 429px;
     align-items: center;
     background-color: $color-white;
     border: 2px solid $basic-grey;
+  }
+
+  .catalog__item--more::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    top: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='31' x2='31' y2='60' stroke='%23D3D3D3' stroke-width='2'/%3E%3Cline x1='60' y1='31' y2='31' stroke='%23D3D3D3' stroke-width='2'/%3E%3C/svg%3E%0A");
   }
 }

@@ -45,6 +45,12 @@
   .main-nav__toggle {
     display: block;
     margin-top: 10px;
+    width: 24px;
+    height: 18px;
+  }
+
+  .main-nav__cross {
+    display: none;
   }
 
   .main-nav__burger {

@@ -124,6 +124,7 @@
   }
 
   .cat-timelapse__after {
+    padding: 0;
     position: relative;
     left: 10px;
     font-size: 20px;
@@ -132,13 +133,32 @@
     background-color: $color-gray;
   }
 
+  .cat-timelapse__after::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    box-sizing: border-box;
+    top: 30px;
+    border-bottom: 1px dashed #b2b2b2;
+  }
+
   .cat-timelapse__before {
+    padding: 0;
     position: relative;
     right: 11px;
     font-size: 20px;
     line-height: 30px;
     border: none;
     background-color: $color-gray;
+  }
+
+  .cat-timelapse__before::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    box-sizing: border-box;
+    top: 30px;
+    border-bottom: 1px dashed #b2b2b2;
   }
 
   .cat-timelapse__image {
@@ -203,21 +223,41 @@
   }
 
   .cat-timelapse__after {
+    padding: 0;
     position: relative;
-    left: 10px;
+    left: 14px;
     font-size: 20px;
     line-height: 30px;
     border: none;
     background-color: transparent;
   }
 
+  .cat-timelapse__after::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    box-sizing: border-box;
+    top: 30px;
+    border-bottom: 1px dashed #b2b2b2;
+  }
+
   .cat-timelapse__before {
+    padding: 0;
     position: relative;
-    right: 11px;
+    right: 17px;
     font-size: 20px;
     line-height: 30px;
     border: none;
     background-color: transparent;
+  }
+
+  .cat-timelapse__before::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    box-sizing: border-box;
+    top: 30px;
+    border-bottom: 1px dashed #b2b2b2;
   }
 
   .cat-timelapse__image {

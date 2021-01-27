@@ -20,6 +20,18 @@
   color: $special_dark-grey;
 }
 
+.additional__order {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $basic-green;
+  border: none;
+  text-decoration: none;
+}
+
 @media (max-width: $tablet-width - 1px) {
   .additional__item {
     padding-top: 13px;
@@ -27,6 +39,14 @@
     border-top: 1px solid $color-light-gray;
     margin-right: 20px;
     margin-left: 20px;
+  }
+
+  .additional__order {
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 2px;
   }
 
   .additional__product {
@@ -46,9 +66,16 @@
   .additional__list {
     margin: 0;
     border: 1px solid $additional-border;
-    // border-top: none;
     margin-bottom: 69px;
     padding: 0 10px;
+  }
+
+  .additional__order {
+    padding: 9.5px 93px;
+    text-align: center;
+    display: block;
+    margin: 0 2px;
+    margin-bottom: 28px;
   }
 
   .additional__item {
@@ -100,12 +127,19 @@
     border-bottom: 1px solid $additional-border;
   }
 
+  .additional__order {
+    text-align: center;
+    padding: 10px;
+    margin-top: 16px;
+  }
+
   .additional__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
     border-top: 1px solid $additional-border;
+    margin-bottom: 20px;
   }
 
   .additional__top {
@@ -118,21 +152,30 @@
   }
 
   .additional__product {
+    position: relative;
+    top: -1px;
+    right: 3px;
     margin-top: 18px;
-    margin-bottom: 29px;
+    // margin-bottom: 28px;
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 0;
   }
 
   .additional__info {
+    position: relative;
+    top: 0;
+    left: -5px;
     display: flex;
     justify-content: space-between;
     margin-top: 28px;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
     width: 288px;
   }
 
   .additional__sign {
+    position: relative;
+    right: 1px;
     font-size: 16px;
     line-height: 20px;
   }
