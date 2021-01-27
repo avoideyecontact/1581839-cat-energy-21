@@ -36,7 +36,7 @@
   .contacts {
     display: flex;
     justify-content: space-between;
-    padding: 66px 72px 63px 72px;
+    padding: 65px 72px 60px 72px;
   }
 
   .contacts__title {
@@ -48,6 +48,13 @@
   .contacts__location {
     text-align: right;
     width: 159px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contacts__location span {
+    display: block;
+    margin-top: 17px;
   }
 
   .contacts__lower {
@@ -68,7 +75,27 @@
     width: 570px;
     height: 201px;
     display: flex;
-    gap: 87px;
-    padding: 66px 0 59px 0;
+    padding: 66px 89px 59px 76px;
+  }
+
+  .contacts__title {
+    display: block;
+    width: 250px;
+    height: 84px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__location {
+    position: relative;
+    top: -3px;
+    width: 155px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contacts__location span {
+    display: block;
+    margin-top: 20px;
   }
 }
